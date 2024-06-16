@@ -1,0 +1,24 @@
+.menuContainer {
+  position: fixed;
+  top: 20px; /* Adjust this value to shift vertically */
+  left: 20px; /* Adjust this value to shift horizontally */
+  z-index: 1000;
+}
+
+.menuButton {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menuButton:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #111;
+}
