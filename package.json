@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://himangshumishra.github.io/MyPortfolio"
+  "homepage": "https://himangshumishra.github.io/MyPortfolio",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
