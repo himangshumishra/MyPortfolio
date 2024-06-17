@@ -9,9 +9,24 @@ const MenuButton = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     } else {
-      console.warn(`Element with ID ${sectionId} not found.`);
+      console.log(`Element with ID ${sectionId} not found.`);
+      
     }
   };
+
+  const handleItemClick = (item) => {
+    switch (item) {
+      case 'whatsappme':
+        window.open('https://api.whatsapp.com/send?phone=%2B919593119009','_blank');
+        break;
+      case 'links':
+        window.open('https://5v1.pw', '_blank');
+        break;
+      default:
+        scrollToSection(item);
+    }
+}
+  
 
   return (
     <div className={styles.menuContainer}>
@@ -23,13 +38,15 @@ const MenuButton = () => {
           { name: 'Projects', id: 'projects' },
           { name: 'Skills', id: 'skills' },
           { name: 'Contact', id: 'contact' },
+          { name: 'WhatsApp Me', id: null },
+          { name: 'Links', id: null },
         ]}
         shape="square"
         startPosition="top left"
-        width={250}
+        width={100}
         onSelect={(item) => {
-            console.log(item);
-          scrollToSection(item.toLowerCase());
+          // console.log(item.replace(" ","").toLowerCase());
+          handleItemClick(item.toLowerCase().replace(" ","").trim());
         }}
       >
         <button className={styles.menuButton}>Menu</button>
