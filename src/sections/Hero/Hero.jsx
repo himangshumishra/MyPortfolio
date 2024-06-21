@@ -54,7 +54,7 @@ function Hero() {
           With a passion for developing web apps that makes your business
           revenue double.
         </p>
-        <a href='https://drive.google.com/file/d/1W0kqqlYGp6t6QJ5ZOvOpmoT2FtY-nFIj/view?usp=drive_link' download>
+        <a href='#' download>
           <button className="hover">Resume</button>
         </a>
       </div>
